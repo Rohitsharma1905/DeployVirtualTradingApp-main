@@ -1,0 +1,6 @@
+  select option {
+    padding: 11px; /* Spacing inside dropdown */
+    font-size: 15px;
+    cursor: pointer;
+  }
+  

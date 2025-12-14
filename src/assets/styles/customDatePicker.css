@@ -1,0 +1,22 @@
+/* customDatePicker.css */
+.react-datepicker-wrapper {
+    width: 100%; /* Ensure the wrapper takes full width */
+  }
+  
+  .react-datepicker__input-container {
+    width: 100%; /* Ensure the input container takes full width */
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%; /* Ensure the input takes full width */
+    padding: 0.75rem 1rem; /* Match padding with other inputs */
+    border-radius: 0.75rem; /* Match border radius with other inputs */
+    border: 1px solid #e5e7eb; /* Match border color with other inputs */
+    font-size: 1rem; /* Match font size with other inputs */
+    outline: none; /* Remove default outline */
+  }
+  
+  .react-datepicker__input-container input:focus {
+    border-color: #3b82f6; /* Match focus border color with other inputs */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1); /* Match focus ring with other inputs */
+  }

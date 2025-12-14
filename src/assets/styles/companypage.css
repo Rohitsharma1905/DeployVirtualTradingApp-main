@@ -1,0 +1,313 @@
+/* General Styling */
+body {
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Page Container */
+  .page-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Company Info Card */
+  .company-info-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .company-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  
+  .company-symbol {
+    font-size: 1rem;
+    color: #64748b;
+  }
+  
+  /* Quick Stats */
+  .quick-stats-container {
+    margin-top: 1.5rem;
+  }
+  
+  .quick-stats-flex {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  
+  .stat-card {
+    background-color: #f9fafb;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .stat-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #334155;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 0.5rem;
+  }
+  
+  .stat-change {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+  }
+  
+  .stat-change.green {
+    color: #10b981;
+  }
+  
+  .stat-change.red {
+    color: #ef4444;
+  }
+  
+  /* Tabs */
+  .tabs-container {
+    margin-top: 2rem;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+  }
+  
+  .tab-button.active-tab {
+    color: #124c71;
+    border-bottom: 2px solid #124c71;
+  }
+  
+  .tab-button:hover {
+    color: #124c71;
+  }
+  
+  /* Overview Cards */
+  .overview-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .overview-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  .overview-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+  }
+  
+  .overview-icon {
+    color: #124c71;
+  }
+  
+  .overview-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .overview-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #475569;
+  }
+  
+  .overview-label {
+    font-weight: 600;
+  }
+  
+  .overview-value {
+    font-weight: 500;
+    color: #124c71;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    margin-top: 1.5rem;
+  }
+  
+  .chart-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-icon {
+    color: #124c71;
+  }
+  
+  /* Analysis Container */
+  .analysis-container {
+    margin-top: 1.5rem;
+  }
+  
+  .analysis-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 0.5rem; /* Add gap between buttons */
+    padding: 0.5rem 0; /* Optional: Add padding for spacing */
+  }
+  
+  .filter-button {
+    background-color: #124c71;
+    color: #ffffff;
+    border: none;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .reset-button {
+    background-color: #203246;
+    margin-left: 1rem; /* Add extra margin to the left of the Reset button */
+    margin-right: 1rem; /* Add extra margin to the left of the Reset button */
+  }
+  /* Table Styling */
+  .table-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .ag-theme-custom {
+    overflow-x: auto;
+    max-height: 500px;
+    border-radius: 12px;
+  }
+  
+  .ag-theme-custom table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .ag-theme-custom th,
+  .ag-theme-custom td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .ag-theme-custom th {
+    background-color: #203246;
+    font-weight: 600;
+    color: rgb(204, 204, 204);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+  
+  .ag-theme-custom td {
+    color: #e5e5e5; /* Light text color for better contrast */
+    font-size: 0.875rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* Specific columns to style */
+.ag-theme-custom td:nth-child(2), /* open */
+.ag-theme-custom td:nth-child(3), /* dayHigh */
+.ag-theme-custom td:nth-child(4), /* dayLow */
+.ag-theme-custom td:nth-child(5), /* previousClose */
+.ag-theme-custom td:nth-child(6), /* lastPrice */
+.ag-theme-custom td:nth-child(7), /* change */
+.ag-theme-custom td:nth-child(8), /* pChange */
+.ag-theme-custom td:nth-child(9), /* totalTradedVolume */
+.ag-theme-custom td:nth-child(10), /* yearHigh */
+.ag-theme-custom td:nth-child(11), /* yearLow */
+.ag-theme-custom td:nth-child(12), /* perChange365d */
+.ag-theme-custom td:nth-child(13) { /* perChange30d */
+  background-color: #124c71; /* Apply the desired color */
+}
+  
+  .ag-theme-custom tr:hover {
+    background-color: #f8fafc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quick-stats-flex {
+      flex-direction: column;
+    }
+  
+    .overview-container {
+      flex-direction: column;
+    }
+  
+    .stat-card,
+    .overview-card {
+      width: 100%;
+    }
+  }
